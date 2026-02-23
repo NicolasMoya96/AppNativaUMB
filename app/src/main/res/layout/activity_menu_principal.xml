@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/gris_fondo">
+
+    <!-- Título con estilo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_principal"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/rojo_umb"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <!-- Línea decorativa -->
+    <View
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:background="@color/rojo_umb"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Botón 1: Página UMB (Rojo) -->
+    <Button
+        android:id="@+id/btnPaginaUMB"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/btn_pagina_umb"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/rojo_umb"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="12dp"/>
+
+    <!-- Botón 2: Buscador Web (Rojo claro) -->
+    <Button
+        android:id="@+id/btnBuscadorWeb"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/btn_buscador_web"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/rojo_claro"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="12dp"/>
+
+    <!-- Botón 3: Formulario Estudiante (Rojo medio) -->
+    <Button
+        android:id="@+id/btnMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/btn_formulario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#D32F2F"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="12dp"/>
+
+    <!-- Espacio flexible -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Botón SALIR (al final) -->
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btn_salir"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#424242"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="12dp"/>
+
+</LinearLayout>

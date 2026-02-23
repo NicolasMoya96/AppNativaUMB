@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base -->
+    <style name="Base.Theme.AppNativaUMB" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/rojo_umb</item>
+        <item name="colorPrimaryVariant">@color/rojo_oscuro</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/rojo_claro</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="Theme.AppNativaUMB" parent="Base.Theme.AppNativaUMB" />
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gris_fondo">
+
+    <!-- Barra superior con botón volver y título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#D32F2F"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="← VOLVER"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#B71C1C"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:cornerRadius="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DATOS REGISTRADOS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!-- Contenido de resultados -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_margin="15dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATOS INGRESADOS"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/rojo_umb"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#F5F5F5"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textViewApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#F5F5F5"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textViewEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="#F5F5F5"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

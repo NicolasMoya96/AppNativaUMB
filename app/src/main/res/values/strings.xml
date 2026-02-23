@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppNativaUMB</string>
+    <string name="menu_principal">MENÚ PRINCIPAL</string>
+    <string name="btn_pagina_umb">INGRESAR A PÁGINA UMB</string>
+    <string name="btn_buscador_web">BUSCADOR WEB URL</string>
+    <string name="btn_formulario">FORMULARIO ESTUDIANTE</string>
+    <string name="btn_salir">CERRAR APP</string>
+    <string name="btn_volver">← VOLVER AL MENÚ</string>
+</resources>
