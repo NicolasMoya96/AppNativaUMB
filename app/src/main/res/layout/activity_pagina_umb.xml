@@ -4,43 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/gris_fondo">
+    android:background="#F5F5F5">
 
-    <!-- Barra superior con botón volver y título -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
-        android:background="@color/rojo_umb"
+        android:background="#C62828"
         android:padding="10dp"
         android:gravity="center_vertical">
 
         <Button
             android:id="@+id/btnVolver"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="← VOLVER"
+            android:layout_height="48dp"
+            android:text="@string/volver"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/rojo_oscuro"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#8B0000"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             app:cornerRadius="8dp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="PÁGINA UMB"
+            android:text="@string/pagina_umb_titulo"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:gravity="center"/>
-
     </LinearLayout>
 
-    <!-- WebView -->
     <WebView
         android:id="@+id/webViewUmb"
         android:layout_width="match_parent"

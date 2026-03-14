@@ -4,75 +4,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/gris_fondo">
+    android:background="#F5F5F5">
 
-    <!-- Barra superior con botón volver y título -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
-        android:background="@color/rojo_claro"
+        android:background="#EF5350"
         android:padding="10dp"
         android:gravity="center_vertical">
 
         <Button
             android:id="@+id/btnVolver"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="← VOLVER"
+            android:layout_height="48dp"
+            android:text="@string/volver"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:backgroundTint="#B71C1C"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             app:cornerRadius="8dp"/>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="BUSCADOR WEB"
+            android:text="@string/buscador_titulo"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:gravity="center"/>
-
     </LinearLayout>
 
-    <!-- Área de búsqueda -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:background="@color/white">
+        android:background="@android:color/white">
 
         <EditText
             android:id="@+id/urlInput"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_weight="1"
-            android:hint="Ingrese URL (ej: google.com)"
+            android:hint="@string/buscador_hint"
             android:inputType="textUri"
+            android:autofillHints="url"
             android:padding="12dp"
-            android:background="@android:drawable/editbox_background"/>
+            android:background="@android:drawable/editbox_background"
+            android:textColor="@android:color/black"
+            android:textColorHint="#757575"
+            android:minHeight="48dp"/>
 
         <Button
             android:id="@+id/btnCargar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="IR"
+            android:layout_height="48dp"
+            android:text="@string/cargar"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/rojo_umb"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#C62828"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             app:cornerRadius="8dp"/>
     </LinearLayout>
 
-    <!-- WebView -->
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"

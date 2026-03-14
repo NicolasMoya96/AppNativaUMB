@@ -1,9 +1,54 @@
 <resources>
     <string name="app_name">AppNativaUMB</string>
+
+    <!-- Menú principal -->
     <string name="menu_principal">MENÚ PRINCIPAL</string>
-    <string name="btn_pagina_umb">INGRESAR A PÁGINA UMB</string>
-    <string name="btn_buscador_web">BUSCADOR WEB URL</string>
-    <string name="btn_formulario">FORMULARIO ESTUDIANTE</string>
-    <string name="btn_salir">CERRAR APP</string>
-    <string name="btn_volver">← VOLVER AL MENÚ</string>
+    <string name="btn_pagina_umb">🏛️ INGRESAR A PÁGINA UMB</string>
+    <string name="btn_buscador_web">🌐 BUSCADOR WEB URL</string>
+    <string name="btn_formulario">📝 FORMULARIO ESTUDIANTE</string>
+    <string name="btn_agenda">📅 AGENDA SQLite</string>
+    <string name="btn_salir">🚪 CERRAR SESIÓN</string>
+
+    <!-- Textos generales -->
+    <string name="volver">← VOLVER</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="consultar">CONSULTAR</string>
+    <string name="guardar_datos">GUARDAR DATOS</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="cargar">CARGAR</string>
+
+    <!-- Agenda -->
+    <string name="agenda_titulo">AGENDA SQLite</string>
+    <string name="agenda_nueva">📅 NUEVA AGENDA</string>
+    <string name="agenda_fecha_hint">Fecha (ej: 2024-03-20)</string>
+    <string name="agenda_asunto_hint">Asunto</string>
+    <string name="agenda_actividad_hint">Actividad</string>
+
+    <!-- Formulario Estudiante -->
+    <string name="formulario_titulo">FORMULARIO ESTUDIANTE</string>
+    <string name="formulario_datos">📋 DATOS DEL ESTUDIANTE</string>
+    <string name="formulario_nombre_hint">Nombre completo</string>
+    <string name="formulario_apellido_hint">Apellido completo</string>
+    <string name="formulario_edad_hint">Edad</string>
+
+    <!-- Resultados -->
+    <string name="resultado_titulo">DATOS REGISTRADOS</string>
+    <string name="resultado_guardados">✅ DATOS GUARDADOS</string>
+    <string name="resultado_nombre">👤 Nombre: %s</string>
+    <string name="resultado_apellido">👥 Apellido: %s</string>
+    <string name="resultado_edad">🎂 Edad: %s</string>
+
+    <!-- Buscador Web -->
+    <string name="buscador_titulo">BUSCADOR WEB</string>
+    <string name="buscador_hint">Ingrese URL (ej: google.com)</string>
+
+    <!-- Página UMB -->
+    <string name="pagina_umb_titulo">PÁGINA UMB</string>
+
+    <!-- Toast messages -->
+    <string name="toast_campos_obligatorios">Todos los campos son obligatorios</string>
+    <string name="toast_agenda_agregada">Agenda agregada con ID: %d</string>
+    <string name="toast_error_agregar">Error al agregar</string>
+    <string name="toast_sin_datos">No hay datos</string>
+    <string name="toast_mostrando">Mostrando %d registros</string>
 </resources>

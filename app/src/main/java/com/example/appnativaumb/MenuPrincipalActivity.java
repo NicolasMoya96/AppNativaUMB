@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MenuPrincipalActivity extends AppCompatActivity {
 
-    private Button btnPaginaUMB, btnBuscadorWeb, btnMensajes, btnSalir;
+    private Button btnPaginaUMB, btnBuscadorWeb, btnMensajes, btnAgenda, btnSalir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         btnPaginaUMB = findViewById(R.id.btnPaginaUMB);
         btnBuscadorWeb = findViewById(R.id.btnBuscadorWeb);
         btnMensajes = findViewById(R.id.btnMensajes);
+        btnAgenda = findViewById(R.id.btnAgenda);
         btnSalir = findViewById(R.id.btnSalir);
 
         btnPaginaUMB.setOnClickListener(new View.OnClickListener() {
@@ -44,12 +45,20 @@ public class MenuPrincipalActivity extends AppCompatActivity {
             }
         });
 
-        // Botón SALIR - cierra la aplicación
+        // NUEVO: Botón AGENDA
+        btnAgenda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPrincipalActivity.this, AgendaActivity.class);
+                startActivity(intent);
+            }
+        });
+
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finishAffinity(); // Cierra todas las actividades
-                System.exit(0);   // Cierra la aplicación
+                finishAffinity();
+                System.exit(0);
             }
         });
     }

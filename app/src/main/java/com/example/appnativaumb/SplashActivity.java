@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
-    // Tiempo de espera: 5 segundos (5000 milisegundos) - REQUISITO DE LA ACTIVIDAD
-    private static final int SPLASH_TIME_OUT = 5000;
+    // Tiempo de espera: 5 segundos (4000 milisegundos) - REQUISITO DE LA ACTIVIDAD
+    private static final int SPLASH_TIME_OUT = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

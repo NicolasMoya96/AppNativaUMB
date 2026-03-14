@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.appnativaumb">
 
-    <!-- Permiso para acceder a Internet - necesario para WebView -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,14 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppNativaUMB">
 
-        <!-- Declaración de todas las actividades de la app -->
+        <!-- NUEVA ACTIVIDAD AGENDA -->
+        <activity android:name=".AgendaActivity" android:exported="false" />
+
         <activity android:name=".ResultadoUsuarioActivity" android:exported="false" />
         <activity android:name=".RegistroUsuarioActivity" android:exported="false" />
         <activity android:name=".BusquedaWebActivity" android:exported="false" />
         <activity android:name=".PaginaUMBActivity" android:exported="false" />
         <activity android:name=".MenuPrincipalActivity" android:exported="false" />
-
-        <!-- Actividad principal que se ejecuta primero (Splash) -->
         <activity android:name=".SplashActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
